@@ -1,10 +1,22 @@
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBHCd1v6Df3Ood1PUpI23napPFhVm1BS7M",
-    authDomain: "sams-grocery.firebaseapp.com",
-    projectId: "sams-grocery",
-    storageBucket: "sams-grocery.appspot.com",
-    messagingSenderId: "763693325576",
-    appId: "1:763693325576:web:8fba9868ba294bbdc660bd",
-    measurementId: "G-E9JGY0EMX5"
-  };
+  apiKey: "AIzaSyBT6FbNlzZhmq1Rg_cO3HxtlO3D-26azXE",
+  authDomain: "sams-grocery-3aa2f.firebaseapp.com",
+  projectId: "sams-grocery-3aa2f",
+  storageBucket: "sams-grocery-3aa2f.appspot.com",
+  messagingSenderId: "725312851637",
+  appId: "1:725312851637:web:398044d729addc1eee38fc",
+  measurementId: "G-R788VXHJ77",
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore(); //initial the DB -- firestore is realtime db in firebase
+
+const auth = firebase.auth(); // for db authentication handling
+
+export { db, auth };
