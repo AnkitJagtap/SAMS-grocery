@@ -7,6 +7,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Contact from "./Contact";
 
 function App() {
   const [{}, dispatch] = useStateValue(); // Datalayer component with connect with the firebase...to store the cookies(not local browsers) or logged users state
@@ -41,6 +42,9 @@ function App() {
         <Switch>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/checkout">
             <Header />

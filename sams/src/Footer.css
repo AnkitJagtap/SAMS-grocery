@@ -1,0 +1,32 @@
+.footer{
+    /* display:flex; */
+    background-color: black !important;
+    height: auto;
+    width: auto
+}
+.frow{
+    padding: 10px 10px 10px 10px;
+    color: azure;
+    display: flex;
+}
+/* .fcol{
+    text-align: center;
+} */
+.fcopyright{
+    text-align: center;
+    padding:30px;
+    color:white;
+}
+.fheading{
+    font-size: 15px;
+    color: rgb(112, 112, 114);
+    padding: 20px ;
+}
+.fbody{
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    padding: 0 0 0 20px;
+}
