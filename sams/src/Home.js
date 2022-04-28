@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -67,6 +68,7 @@ function Home() {
             rating={4}
           />
         </div>
+        <Footer />
       </div>
     </div>
   );
