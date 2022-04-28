@@ -10,9 +10,16 @@ import Payment from "./Payment";
 
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import ReturnP from "./ReturnP";
+
+// stripe publishable api key
+const promise = loadStripe(
+  "pk_test_51KtPcbAgpgrvrkjatkhTL130aDhn7fN7t9CcKzNXybDiYwkVUqG9REanm9dvDY9xyJUKzA7RXmfWACCePp7Gi3SY00rg6Hc7mE"
+);
 
 function App() {
   const [{}, dispatch] = useStateValue(); // Datalayer component with connect with the firebase...to store the cookies(not local browsers) or logged users state
@@ -64,7 +71,11 @@ function App() {
 
           <Route path="/payment">
             <Header />
-            <Payment />
+
+            {/* surround payment with elements and pass promise = apikey  */}
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/">
             <Header />
