@@ -12,6 +12,7 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import ReturnP from "./ReturnP";
 
 
 function App() {
@@ -55,9 +56,13 @@ function App() {
             <Header />
             <Checkout />
           </Route>
+
+          <Route path="/returnp">
+            <ReturnP />
           <Route path="/payment">
           <Header />
             <Payment /> 
+
           </Route>
           <Route path="/">
             <Header />

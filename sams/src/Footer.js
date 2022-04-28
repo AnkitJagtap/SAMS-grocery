@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import "./Contact";
+import "./ReturnP";
 function Footer() {
   return (
     <div class="footer">
@@ -13,7 +14,9 @@ function Footer() {
           </Link>
 
           <p class="fbody">About</p>
-          <p class="fbody">Return Policy</p>
+          <Link to={"./ReturnP"} class="fbody">
+            Return Policy
+          </Link>
           <p class="fbody">Terms and Conditions</p>
           <p class="fbody">Privacy</p>
         </div>
