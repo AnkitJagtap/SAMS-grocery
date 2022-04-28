@@ -20,6 +20,22 @@
     /* mask-image: lowers image density*/
     /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
 } */ 
+#flash{
+  font-size: 10px;
+  color: green;
+  
+}
+#flashh{
+  padding: 0 0px 0 50px;
+  color: green;
+  font-size: 10px;
+}
+.free{
+  font-size: 10px;
+  color:red;
+  padding: 0 0px 0 10px;  
+
+}
 
 .home_image {
     width: 100%;
@@ -46,4 +62,11 @@
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
+    padding-top: 30px;
+  }
+
+  .popular{
+    margin-left: 30px;
+    font-size: 23px;
+    padding: 20px 20px 20px 20px;
   }

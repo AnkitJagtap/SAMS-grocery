@@ -57,13 +57,12 @@ function Return() {
             <tr>
               <td>
                 <p>
-                  Lifestyle: Watch, Winter Wear (Blazer, Sweatshirt, Scarf,
-                  Shawl, Jacket, Coat, Sweater, Thermal, Kid’s Thermal, Track
-                  Pant, Shrugs), etc...
+                  Watch (Perishable, Bakery, Fresh Produce Meat, Dairy, Snack,
+                  Protein Bars, Vegetables, Fruits, Breads ), etc...
                 </p>
               </td>
               <td>
-                <p>10 days</p>
+                <p>2 days</p>
                 <p>Refund, Replacement or Exchange</p>
               </td>
             </tr>
@@ -507,27 +506,15 @@ function Return() {
                 <p>
                   This policy shall be applicable only if the product was bought
                   when this policy was applicable to the product. If not, the
-                  policy provided{" "}
-                  <a
-                    href="https://www.flipkart.com/pages/returnpolicy"
-                    rel="nofollow"
-                  >
-                    here
-                  </a>{" "}
-                  shall apply to the order. It is clarified that a customer may
-                  only be able to seek a one-time replacement under this Policy,
-                  subject to the other terms provided herein.
+                  policy provided here shall apply to the order. It is clarified
+                  that a customer may only be able to seek a one-time
+                  replacement under this Policy, subject to the other terms
+                  provided herein.
                 </p>
                 <p>
                   Exceptions to this policy: Following claims will be covered
-                  under the policy provided{" "}
-                  <a
-                    href="https://www.flipkart.com/pages/returnpolicy"
-                    rel="nofollow"
-                  >
-                    here
-                  </a>{" "}
-                  and through corresponding validation processes
+                  under the policy provided here and through corresponding
+                  validation processes
                 </p>
                 <p>a. product undelivered</p>
                 <p>b. product/accessories missing</p>
@@ -546,12 +533,7 @@ function Return() {
                 </p>
                 <p>
                   You can view the complete list of non-returnable products{" "}
-                  <a
-                    href="http://www.flipkart.com/non-returnables"
-                    rel="nofollow"
-                  >
-                    here.
-                  </a>
+                  here.
                 </p>
               </td>
             </tr>
@@ -674,11 +656,7 @@ function Return() {
             have accepted an open box delivery, no return request will be
             processed, except for manufacturing defects. In such cases, these
             category-specific replacement/return general conditions will be
-            applicable.{" "}
-            <a href="https://www.flipkart.com/pages/open-box-delivery-tnc">
-              Click here
-            </a>{" "}
-            to know more about Open Box Delivery
+            applicable. Click here to know more about Open Box Delivery
           </li>
           <li>
             For products where installation is provided by Flipkart's service

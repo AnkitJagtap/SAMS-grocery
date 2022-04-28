@@ -11,6 +11,13 @@ function Home() {
           src="https://m.media-amazon.com/images/I/71+6X396igL._SX3740_.jpg"
           alt=""
         />
+        <b class="popular">Popular picks</b>
+        <br></br>
+        <i class="fa fa-flash" id="flashh"></i>
+        <i id="flash">Delivery by 4.30pm</i>
+        {/* <p > */}
+        <b class="free">Free Delivery on orders $20+</b>
+        {/* </p> */}
         <div className="home_row">
           <Product
             title="Frito-Lay, (18 Pack)"
