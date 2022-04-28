@@ -5,8 +5,21 @@ import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
+
+import Payment from "./Payment";
+
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import ReturnP from "./ReturnP";
+
+// stripe publishable api key
+const promise = loadStripe(
+  "pk_test_51KtPcbAgpgrvrkjatkhTL130aDhn7fN7t9CcKzNXybDiYwkVUqG9REanm9dvDY9xyJUKzA7RXmfWACCePp7Gi3SY00rg6Hc7mE"
+);
 
 function App() {
   const [{}, dispatch] = useStateValue(); // Datalayer component with connect with the firebase...to store the cookies(not local browsers) or logged users state
@@ -42,16 +55,35 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/contact">
+            <Header />
+            <Contact />
+          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+
+          <Route path="/returnp">
+            <Header />
+            <ReturnP />
+          </Route>
+
+          <Route path="/payment">
+            <Header />
+
+            {/* surround payment with elements and pass promise = apikey  */}
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/">
             <Header />
             <Home />
           </Route>
         </Switch>
-        <h1> Welcome to SAMS grocery!</h1>
+        <Footer />
+        {/* <h1> Welcome to SAMS grocery!</h1> */}
       </div>
     </Router>
   );
