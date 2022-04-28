@@ -14,7 +14,6 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import ReturnP from "./ReturnP";
 
-
 function App() {
   const [{}, dispatch] = useStateValue(); // Datalayer component with connect with the firebase...to store the cookies(not local browsers) or logged users state
 
@@ -50,6 +49,7 @@ function App() {
             <Login />
           </Route>
           <Route path="/contact">
+            <Header />
             <Contact />
           </Route>
           <Route path="/checkout">
@@ -58,11 +58,13 @@ function App() {
           </Route>
 
           <Route path="/returnp">
+            <Header />
             <ReturnP />
-          <Route path="/payment">
-          <Header />
-            <Payment /> 
+          </Route>
 
+          <Route path="/payment">
+            <Header />
+            <Payment />
           </Route>
           <Route path="/">
             <Header />
