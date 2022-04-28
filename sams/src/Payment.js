@@ -19,12 +19,25 @@ function Payment() {
 
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(null);
+  const [clientSecret, setClientSecret] = useState(true);
+
+  useEffect(() => {
+    // generate the special stripe secret which allows us to charge a customer
+
+    const getClientSecret = async () => {
+      const response = await axios;
+    };
+
+    getClientSecret();
+  }, [basket]);
 
   // handle card submit
   const handleSubmit = async (event) => {
     // do stripe function
     event.preventDefault();
     setProcessing(true);
+
+    // const payload = await stripe
   };
 
   const handleChange = (event) => {
