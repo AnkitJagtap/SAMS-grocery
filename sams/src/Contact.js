@@ -3,9 +3,12 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <div>
+    <div class="con">
+      <br></br>
       <h1>SAMS Help Center | 24x7 Customer Care Support</h1>
       <div>
+        <br></br>
+        <br></br>
         <p class="contact">
           The SAMS Help Centre page lists out various types of issues that you
           may have encountered so that there can be quick resolution and you can
@@ -28,6 +31,7 @@ function Contact() {
         </p>
       </div>
       <div>
+        <br></br>
         <p>
           <b>SAMS Help Centre: Get All Shopping Solutions Here</b>{" "}
         </p>
@@ -57,6 +61,7 @@ function Contact() {
         </p>
       </div>
       <div>
+        <br></br>
         <p>
           <b>24x7 Customer Care Support</b>
         </p>
@@ -75,6 +80,7 @@ function Contact() {
         </p>
       </div>
       <div>
+        <br></br>
         <p>
           <b>Types and Topics of Support in SAMS Help Centre</b>
         </p>
@@ -93,7 +99,8 @@ function Contact() {
         </p>
       </div>
       <div>
-        <p>
+        <br></br>
+        <p class="contact">
           The SAMS Help Centre is available on the SAMS site to help every SAMS
           customer with any grievance that they may have. You can find solutions
           regarding the tracking of your order. It will also help edit your

@@ -11,6 +11,7 @@ import Payment from "./Payment";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 
 function App() {
@@ -63,7 +64,8 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <h1> Welcome to SAMS grocery!</h1>
+        <Footer />
+        {/* <h1> Welcome to SAMS grocery!</h1> */}
       </div>
     </Router>
   );
