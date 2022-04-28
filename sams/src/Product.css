@@ -63,7 +63,7 @@
   }
   
   .product > img {
-    max-height: 200px;
+    max-height: 150px;
     width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
@@ -71,8 +71,8 @@
   }
   
   .product_info {
-    height: 100px;
-    margin-bottom: 20px;
+    height: 50px;
+    margin-bottom: 10px;
   }
   
   .product_price {
@@ -91,7 +91,7 @@
   }
   
   .add_toBasket:hover {
-    color: #f0c14b;
+    color: #4bf098;
     background-color: white;
     border: 0;
   }
