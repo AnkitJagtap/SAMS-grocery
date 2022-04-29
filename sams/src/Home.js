@@ -6,18 +6,12 @@ function Home() {
   return (
     <div className="home">
       <div className="home_container">
-        <img
-          className="home_image"
-          src="https://m.media-amazon.com/images/I/71+6X396igL._SX3740_.jpg"
-          alt=""
-        />
+        <img className="home_image" src="bg.jpeg" alt="" />
         <b class="popular">Popular picks</b>
         <br></br>
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 4.30pm</i>
-
         <b class="free">Free Delivery on orders $20+</b>
-
         <div className="home_row">
           <Product
             title="Frito-Lay, (18 Pack)"
@@ -43,6 +37,12 @@ function Home() {
             image="https://m.media-amazon.com/images/I/81xPiL7ApkL._SX679_.jpg"
             rating={4}
           />
+          <Product
+            title="Roasted Honey Oats"
+            price={3.25}
+            image="oats.jpeg"
+            rating={2}
+          />
         </div>
         <br></br>
         <br></br>
@@ -51,7 +51,6 @@ function Home() {
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 5.00pm</i>
         <b class="free">Free Delivery on orders $35+</b>
-
         <div className="home_row">
           <Product
             title="Butter and Grape Jelly Sandwiches, 2 Ounces"
@@ -77,6 +76,53 @@ function Home() {
             image="https://m.media-amazon.com/images/I/81nyvg6HV4L._SX679_PIbundle-8,TopRight,0,0_AA679SH20_.jpg"
             rating={4}
           />
+          <Product
+            title="ChocoChip Cookies"
+            price={4.49}
+            image="cookie.jpeg"
+            rating={4}
+          />
+        </div>
+
+        <br></br>
+        <br></br>
+        <b class="popular">Organic Produce</b>
+        <br></br>
+        <i class="fa fa-flash" id="flashh"></i>
+        <i class="flash">Delivery by 4.00pm</i>
+        <b class="free">Free Delivery on orders $20+</b>
+        <div className="home_row">
+          <Product
+            title="Vine Tomatoes 3lbs"
+            price={4.49}
+            image="tomato.jpeg"
+            rating={4}
+          />
+          <Product
+            title="Eggplant - 1 count"
+            price={0.99}
+            image="eggplant.jpeg"
+            rating={3}
+          />
+          <Product
+            title="Organic Cabbage"
+            price={1.99}
+            image="Cabbage.jpeg"
+            rating={5}
+          />
+
+          <Product
+            title="Yellow Onions - 3lbs"
+            price={3.45}
+            image="Onion.jpeg"
+            rating={3}
+          />
+          <Product
+            title="Capsicum - 3 count"
+            price={2.45}
+            image="Capsicum.jpeg"
+            rating={5}
+          />
         </div>
 
         <br></br>
@@ -86,25 +132,72 @@ function Home() {
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 3.30pm</i>
         <b class="free">Free Delivery on orders $35+</b>
+        <br></br>
+        <b class="freee">Valid ID required at the time of Delivery</b>
+        {/* <br></br> <br></br>
+        <h3>Drinks</h3> */}
+        <div className="home_row">
+          <Product
+            title="Soft Drinks"
+            price={4.19}
+            image="drinks.png"
+            rating={4}
+          />
+          <Product
+            title="Beer-Sam Adams, Crate of 6"
+            price={9.19}
+            image="Beer.jpeg"
+            rating={4}
+          />
+          <Product
+            title="Absolute Vodka - 750ml"
+            price={15.19}
+            image="vodka.jpeg"
+            rating={4}
+          />
+          <Product
+            title="Rum-Captain Morgan"
+            price={20.19}
+            image="Rum.jpeg"
+            rating={4}
+          />
+          <Product
+            title="Prosecco 750ml"
+            price={9.19}
+            image="wine.jpeg"
+            rating={3}
+          />
+        </div>
 
         <div className="home_row">
-          <Product title="Alcohol" price={4.19} image="drinks.png" rating={4} />
           <Product
-            title="Hostess Cup Cakes, 8 Count"
-            price={4.19}
-            image="https://m.media-amazon.com/images/I/81nyvg6HV4L._SX679_PIbundle-8,TopRight,0,0_AA679SH20_.jpg"
+            title="Grey Goose-750ml"
+            price={22.19}
+            image="Grey.jpeg"
             rating={4}
           />
           <Product
-            title="Hostess Cup Cakes, 8 Count"
-            price={4.19}
-            image="https://m.media-amazon.com/images/I/81nyvg6HV4L._SX679_PIbundle-8,TopRight,0,0_AA679SH20_.jpg"
+            title="Henessey vs Cognac- 1.75L"
+            price={88.19}
+            image="Henessey.jpeg"
+            rating={3}
+          />
+          <Product
+            title="Corona, Crate of 6"
+            price={9.49}
+            image="corona.jpeg"
+            rating={5}
+          />
+          <Product
+            title="Remy Martin VSOP Cognac - 750ml"
+            price={46.19}
+            image="Remy.jpeg"
             rating={4}
           />
           <Product
-            title="Alcohol"
-            price={4.19}
-            image="https://m.media-amazon.com/images/I/81nyvg6HV4L._SX679_PIbundle-8,TopRight,0,0_AA679SH20_.jpg"
+            title="Grand Marnier Cordon Rogue"
+            price={65.99}
+            image="Grand.jpeg"
             rating={4}
           />
         </div>

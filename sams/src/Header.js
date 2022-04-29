@@ -5,6 +5,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import SearchBox from "./SearchBox";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -23,8 +24,16 @@ function Header() {
 
       <div className="header_search">
         <input className="header_searchInput" type="text" />
-        <SearchIcon className=" header_searchIcon" />
+
+        {/* <SearchBox
+          placeholder="Enter country name ..."
+          handleChange={this.handleChange}
+        /> */}
+        <SearchIcon className=" header_searchIcon" type="search" />
       </div>
+      {/* <div class="user_cards">
+        <div class="card"></div>
+      </div> */}
 
       <div className="header_nav">
         {/* if no user then redirect to the login page */}

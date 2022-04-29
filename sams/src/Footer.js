@@ -8,7 +8,7 @@ function Footer() {
     <div class="footer">
       <div class="frow">
         <div class="fcol">
-          <p class="fheading">About</p>
+          <p class="fheading">ABOUT</p>
           <Link to={"./Contact"} class="fbody">
             Contact US
           </Link>
@@ -30,6 +30,7 @@ function Footer() {
         <div class="fcol">
           <p class="fheading">SOCIAL</p>
           <p class="fbody">Facebook</p>
+          {/* <Link href="https://twitter.com/">Twitter</Link> */}
           <p class="fbody">Twitter</p>
           <p class="fbody">Instagram</p>
         </div>
@@ -43,7 +44,10 @@ function Footer() {
           <p class="fbody">Chicago</p>
         </div>
       </div>
-      <div class="fcopyright">© Copyright reserved by SAMS</div>
+      <div class="fcopyright">
+        Copyright © 2015 All rights reserved by SAMS
+        <img class="image_visa" src="visa.png" alt="" />
+      </div>
     </div>
   );
 }
