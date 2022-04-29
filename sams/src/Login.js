@@ -87,6 +87,7 @@ function Login() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter email"
             type="text"
+            className="email"
           />
 
           <h5>Password</h5>
@@ -95,6 +96,7 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter password"
             type="password"
+            className="email"
           />
 
           <button
@@ -102,7 +104,7 @@ function Login() {
             onClick={signIn}
             className="login__signInButton"
           >
-            Sign in
+            <b class="sign">Sign in</b>
           </button>
         </form>
 
