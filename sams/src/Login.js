@@ -39,13 +39,44 @@ function Login() {
 
   return (
     <div className="login">
-      <Link to="/">
-        <img
-          className="login__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png"
-        />
-      </Link>
-
+      {/* <Link to="/">
+        <img className="login__logo" src="logo.png" />
+      </Link> */}
+      <br></br>
+      <h1>Sign In Page</h1>
+      <br></br>
+      <br></br>
+      <div class="fb">
+        <a
+          class="nav-link facebook"
+          href="https://www.facebook.com/miti.shah.520"
+        >
+          <i class="fab fa-facebook-square fa-lg"></i>
+          &nbsp;<b className="facebook">Continue with facebook</b>
+        </a>
+      </div>
+      <br></br>
+      <div class="tweet">
+        <a class="twitter" href="https://twitter.com/">
+          <i class="fab fa-twitter"></i>
+          &nbsp; <b className="twitter">Continue with Twitter</b>
+        </a>
+      </div>
+      <br></br>
+      <div class="goog">
+        <a
+          class="google"
+          href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&client_id=95925662322-jroo0m34qta6c7f2tkfhadkes4l9rr79.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Flogin.salesforce.com%2Fservices%2Fauthglobalcallback&scope=email%20openid%20profile&state=CAAAAYB0SZ9ZMDAwMDAwMDAwMDAwMDAwAAAA7NMWHHKTcH78_PrgE3VMBo7zOwoxw_sgK6BitkrC9I2F4Xhp6PZOeRmGenpKKpxn1tMUhIKADaZ7tP6UwfeibTj71Snqj58A5qhkdabCvsb9B2k9y4-L6taVsnPAEw2CGUtqTs4PX7KxS6z3MyjL4FS2lntQczRmT7lhC6jPtVv1_LsJkxEb0hBQTNZxbeyxFLykc7wTt-7A38YJALB-aWFVcq19AnHg0u2md_i1mTC8SQ1UpBYacxKk0r5Dv957LGECQQt2Figi_a0fqatNH1OfiXnfKCwHXkLoheF8RZvM1aXpL_MiLj8RpbnETQ7Iwg0jvHwlQMaQjf8c8505U5Zzl8nVVF1bpwNkwJ7SFXVGWpIuzCePQFtK4mXb23xipHaL_ZmdIrS_e3TiEmvS13ubwB4aSuJepCWIykBgdsFHsXl6sf0zbi33iBqpWANi-GJxWcWkkHaSL4aiR5h4WC-9d5YNjPIT_KRQcW3DPzUIDX4_VI67Ghq42pOP_Z2rSO_XSS9dkstmiGWfg_NfD4bHOaeSd7bnLuZ0AiZvK45MUcpEmD_2DFIBEEVgQSQPQSnxNCP9hN9GXpatVIZEczV_s2_YG5i_WCTHWoOB4sbqAKhJQV4ZDkRe1bEG5IG_3A%3D%3D&flowName=GeneralOAuthFlow"
+        >
+          <i class="fab fa-google"></i>
+          &nbsp; <b className="google">Continue with Google</b>
+        </a>
+      </div>
+      <br></br>
+      <br></br>
+      <b>OR</b>
+      <br></br>
+      <br></br>
       <div className="login__container">
         <h1>Sign in</h1>
 
@@ -84,11 +115,12 @@ function Login() {
           onClick={register}
           className="login__registerButton"
         >
-          Create your amazon account
+          Create your SAMS account
         </button>
       </div>
     </div>
   );
+  <br></br>;
 }
 
 export default Login;
