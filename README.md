@@ -1,5 +1,12 @@
 # SAMS-grocery
 
+**TEAM MEMBERS:
+Ankit Jagtap: 002193023
+Miti Shah: 002193806
+Sahil Sonawane: 002193783
+Sai Saran Pathuri: 002968508
+**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
