@@ -11,7 +11,7 @@ function Home() {
         <br></br>
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 4.30pm</i>
-        <b class="free">Free Delivery on orders $20+</b>
+        {/* <b class="free">Free Delivery on orders $20+</b> */}
         <div className="home_row">
           <Product
             id="00001"
@@ -55,7 +55,7 @@ function Home() {
         <br></br>
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 5.00pm</i>
-        <b class="free">Free Delivery on orders $35+</b>
+        {/* <b class="free">Free Delivery on orders $35+</b> */}
         <div className="home_row">
           <Product
             id="00006"
@@ -100,7 +100,7 @@ function Home() {
         <br></br>
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 4.00pm</i>
-        <b class="free">Free Delivery on orders $20+</b>
+        {/* <b class="free">Free Delivery on orders $20+</b> */}
         <div className="home_row">
           <Product
             id="00011"
@@ -146,7 +146,7 @@ function Home() {
         <br></br>
         <i class="fa fa-flash" id="flashh"></i>
         <i class="flash">Delivery by 3.30pm</i>
-        <b class="free">Free Delivery on orders $35+</b>
+        {/* <b class="free">Free Delivery on orders $35+</b> */}
         <br></br>
         <b class="freee">Valid ID required at the time of Delivery</b>
         {/* <br></br> <br></br>

@@ -26,9 +26,10 @@
   
 }
 #flashh{
-  padding: 0 0px 0 50px;
+  /* padding: 0 0px 0 50px; */
   color: green;
   font-size: 10px;
+  margin-left:50px
 }
 .free{
   font-size: 10px;
