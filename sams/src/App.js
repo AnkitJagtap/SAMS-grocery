@@ -15,6 +15,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import ReturnP from "./ReturnP";
+import Statistic from "./Statistic";
 
 // stripe publishable api key
 const promise = loadStripe(
@@ -55,6 +56,10 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/statistic">
+            <Header />
+            <Statistic />
+          </Route>
           <Route path="/contact">
             <Header />
             <Contact />
@@ -83,7 +88,6 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-        {/* <h1> Welcome to SAMS grocery!</h1> */}
       </div>
     </Router>
   );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "../src/firebase";
+import Subtotal from "./Subtotal";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -15,8 +16,17 @@ function Login() {
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
-        //succesfully logged wtih email and password
-        history.push("/");
+        if (email === "admin123@gmail.com") {
+          // <Link to="/header"></Link>;
+          return <Subtotal />;
+
+          // alert("admin");
+          // alert("admin");
+        } else {
+          //succesfully logged wtih email and password
+          history.push("/");
+          alert("Logged in Successfully!!");
+        }
       })
       .catch((error) => alert(error.message));
   };
@@ -28,6 +38,7 @@ function Login() {
       .then((auth) => {
         //succesfully crated new user with the same email and password
         console.log(auth);
+        alert("Login Created Successfully!!");
 
         //if user login is succesfully done then redirect the user to home page
         if (auth) {
