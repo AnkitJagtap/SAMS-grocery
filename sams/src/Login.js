@@ -17,11 +17,7 @@ function Login() {
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
         if (email === "admin123@gmail.com") {
-          // <Link to="/statistic"></Link>;
-          // return <Subtotal />;
-          history.push("/statistic");
-          alert(email); 
-          // alert("admin");
+          history.push("/statistic");         
         } else {
           //succesfully logged wtih email and password
           history.push("/");
