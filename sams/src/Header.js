@@ -24,7 +24,7 @@ function Header() {
     return <Orders />;
   };
 
-  const orderCondtion = user ? "orders" : "login";
+  const orderCondtion = user ? "oders" : "login";
 
   return (
     <div className="header">
@@ -33,13 +33,13 @@ function Header() {
       </Link>
 
       <div className="header_search">
-        <input className="header_searchInput" type="text" />
+        {/* <input className="header_searchInput" type="text" /> */}
 
         {/* <SearchBox
           placeholder="Enter country name ..."
           handleChange={this.handleChange}
         /> */}
-        <SearchIcon className=" header_searchIcon" type="search" />
+        {/* <SearchIcon className=" header_searchIcon" type="search" /> */}
       </div>
       {/* <div class="user_cards">
         <div class="card"></div>
