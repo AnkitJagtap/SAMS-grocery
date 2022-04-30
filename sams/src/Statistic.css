@@ -1,3 +1,23 @@
 .chart{
     background-color: blue;
 }
+.row{
+    display:flex;
+    
+}
+.title{
+    /* color: white; */
+   font-size: 25px;
+   margin-left:50px;
+   text-align: center;
+}
+/* .col{
+    background-color:rgb(255, 182, 45);
+} */
+
+.profileimg{
+    max-width:200px;
+    min-height: 120px;
+    max-height: 200px;
+    margin-left: 50px;
+}
