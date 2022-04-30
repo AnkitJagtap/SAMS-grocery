@@ -70,3 +70,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Stripe
+npm i @stripe/stripe-js     
+sudo npm i @stripe/react-stripe-js
+
+### Axios
+nom i axios
+
+### Firebase
+npm install firebase
+npm install firebase-tools   
+firebase login
+firebase emulators:start
+Firebase deploy —only functions // to deploy functions only
+
+### Moment
+npm i moment
+
+### Material UI
+npm install @material-ui/core
+
+### React
+npm install --save react@17.0.2 react-dom@17.0.2
+
+
+
