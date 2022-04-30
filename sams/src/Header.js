@@ -7,6 +7,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import Orders from "./Orders";
 import SearchBox from "./SearchBox";
+import Contact from "./Contact";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -29,7 +30,7 @@ function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <img className="logo.png" src="logo.png" alt="" />
+        <img className="logo" src="logo.png" alt="" />
       </Link>
 
       <div className="header_search">
@@ -62,9 +63,10 @@ function Header() {
           </div>
         </Link>
         <div className="header_option">
-          <span className="header_optionLineOne">Your</span>
-          <span className="header_optionLineTwo">Prime</span>
-        </div>
+          <span className="header_optionLineOne">About</span>
+          {/* <Contact /> */}
+          <span className="header_optionLineTwo">Us</span>
+         </div>
         <Link to="/checkout">
           <div className="header_optionBasket">
             <ShoppingBasketIcon />
