@@ -13,6 +13,7 @@ import { useStateValue } from "./StateProvider";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import ReturnP from "./ReturnP";
+import Statistic from "./Statistic";
 
 function App() {
   const [{}, dispatch] = useStateValue(); // Datalayer component with connect with the firebase...to store the cookies(not local browsers) or logged users state
@@ -48,6 +49,10 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/statistic">
+            <Header />
+            <Statistic />
+          </Route>
           <Route path="/contact">
             <Header />
             <Contact />
@@ -72,7 +77,6 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-        {/* <h1> Welcome to SAMS grocery!</h1> */}
       </div>
     </Router>
   );
