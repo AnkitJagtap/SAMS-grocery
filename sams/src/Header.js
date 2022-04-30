@@ -62,11 +62,13 @@ function Header() {
             <span className="header_optionLineTwo">Orders</span>
           </div>
         </Link>
+        <Link to="/contact">
         <div className="header_option">
           <span className="header_optionLineOne">About</span>
           {/* <Contact /> */}
           <span className="header_optionLineTwo">Us</span>
          </div>
+        </Link>
         <Link to="/checkout">
           <div className="header_optionBasket">
             <ShoppingBasketIcon />
