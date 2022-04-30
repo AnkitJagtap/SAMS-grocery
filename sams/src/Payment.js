@@ -7,6 +7,7 @@ import { useElements, CardElement, useStripe } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
 import axios from "./axios";
+import { db } from "./firebase";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -59,10 +60,33 @@ function Payment() {
       .then(({ paymentIntent }) => {
         //paymentIntent = payment confirmation
 
+        console.log("basket", basket);
+        console.log("paymentIntent.amount", paymentIntent.amount);
+        console.log("paymentIntent.created", paymentIntent.created);
+
+        // db.collection('users');  // it uses NoSQL datastructure
+        // going in to users collection, going in to a specific userId, that user's orders, paymentIntent.id (=orderId)
+        db.collection("users")
+          .doc(user?.uid)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
 
+<<<<<<< Updated upstream
+=======
+        dispatch({
+          type: "EMPTY_BASKET",
+        });
+
+>>>>>>> Stashed changes
         history.replace("/orders");
       });
   };

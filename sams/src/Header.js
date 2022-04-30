@@ -5,16 +5,26 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import Orders from "./Orders";
 import SearchBox from "./SearchBox";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
+  const userName = user
+    ? user.email.substring(0, user.email.indexOf("@"))
+    : "Guest";
 
   const handleAuth = () => {
     if (user) {
       auth.signOut();
     }
   };
+
+  const handleOrders = () => {
+    return <Orders />;
+  };
+
+  const orderCondtion = user ? "oders" : "login";
 
   return (
     <div className="header">
@@ -39,16 +49,18 @@ function Header() {
         {/* if no user then redirect to the login page */}
         <Link to={!user && "/login"}>
           <div onClick={handleAuth} className="header_option">
-            <span className="header_optionLineOne">Hello Guest</span>
+            <span className="header_optionLineOne">Hello {userName}</span>
             <span className="header_optionLineTwo">
               {user ? "Sign Out" : "Sign In"}
             </span>
           </div>
         </Link>
-        <div className="header_option">
-          <span className="header_optionLineOne">Returns</span>
-          <span className="header_optionLineTwo">Orders</span>
-        </div>
+        <Link to={orderCondtion}>
+          <div className="header_option">
+            <span className="header_optionLineOne">Returns</span>
+            <span className="header_optionLineTwo">Orders</span>
+          </div>
+        </Link>
         <div className="header_option">
           <span className="header_optionLineOne">Your</span>
           <span className="header_optionLineTwo">Prime</span>
