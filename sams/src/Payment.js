@@ -20,23 +20,29 @@ function Payment() {
   const [processing, setProcessing] = useState("");
 
   const [error, setError] = useState(null);
-  const [disabled, setDisabled] = useState(null);
+  const [disabled, setDisabled] = useState();
   const [clientSecret, setClientSecret] = useState(true);
 
   useEffect(() => {
+    // it can have some dependencies and it runs when the component loads, as well as any of the parameters in brackets change
     // generate the special stripe secret which allows us to charge a customer
-
+    // whenever baseket changes we need to get a new secret. We need to tell stripe that it is no longer $50 we are charging
+    // but now it could be $30
     const getClientSecret = async () => {
       const response = await axios({
         method: "post",
-        // Stripe expects the total in a currencies subunits
+        // Stripe expects the total in a currencies subunits... if $10 then 1000cents
         url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
       });
       setClientSecret(response.data.clientSecret);
     };
 
-    getClientSecret();
+    getClientSecret(); // the way to run async function
   }, [basket]);
+
+  // went to the backend, made a payment request for the amount, went back to the frontend, and rendered on the screen
+  console.log("THE SECRET IS >>> ", clientSecret);
+  console.log("person: ", user);
 
   // handle card submit
   const handleSubmit = async (event) => {
@@ -136,6 +142,7 @@ function Payment() {
               </div>
 
               {/* Error handling */}
+              {error && <div>{error}</div>}
             </form>
           </div>
         </div>
