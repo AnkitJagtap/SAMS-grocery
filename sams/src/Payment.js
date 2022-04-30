@@ -80,13 +80,10 @@ function Payment() {
         setError(null);
         setProcessing(false);
 
-<<<<<<< Updated upstream
-=======
         dispatch({
-          type: "EMPTY_BASKET",
-        });
+          type: 'EMPTY_BASKET'
+        })
 
->>>>>>> Stashed changes
         history.replace("/orders");
       });
   };
