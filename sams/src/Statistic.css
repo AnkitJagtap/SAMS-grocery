@@ -10922,6 +10922,10 @@
   .menu-title{
     padding-left:20px;
   }
+  .menu-title:hover{
+    color:green;
+    font-size:15px;
+  }
   
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
