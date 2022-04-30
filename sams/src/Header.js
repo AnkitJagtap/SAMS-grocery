@@ -24,7 +24,7 @@ function Header() {
     return <Orders />;
   };
 
-  const orderCondtion = user ? "oders" : "login";
+  const orderCondtion = user ? "orders" : "login";
 
   return (
     <div className="header">
