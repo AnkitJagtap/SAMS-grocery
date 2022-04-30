@@ -1,44 +1,44 @@
-.footer{
-    /* display:flex; */
-    background-color: black !important;
-    height: auto;
-    width: auto
+.footer {
+  /* display:flex; */
+  margin-top: 8%;
+  background-color: black !important;
+  height: auto;
+  width: auto;
 }
-.frow{
-    padding: 10px 10px 10px 10px;
-    color: azure;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
-    
-}
-
-.fcopyright{
-    text-align: center;
-    padding:30px;
-    color:white;
-}
-.fheading{
-    font-size: 15px;
-    color: rgb(112, 112, 114);
-    padding: 20px ;
-}
-.fbody{
-    color: #fff;
-    display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    padding: 0 0 0 20px;
-    text-decoration: none;
+.frow {
+  padding: 10px 10px 10px 10px;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
 }
 
-.fbody:hover{
-    color: green;
+.fcopyright {
+  text-align: center;
+  padding: 30px;
+  color: white;
 }
-.image_visa{
-    margin-left: 20px;
-    max-width: 150px;
+.fheading {
+  font-size: 15px;
+  color: rgb(112, 112, 114);
+  padding: 20px;
+}
+.fbody {
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  padding: 0 0 0 20px;
+  text-decoration: none;
+}
+
+.fbody:hover {
+  color: green;
+}
+.image_visa {
+  margin-left: 20px;
+  max-width: 150px;
 }
